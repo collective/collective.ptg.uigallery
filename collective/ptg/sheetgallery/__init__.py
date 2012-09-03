@@ -31,7 +31,7 @@ class IuigalleryDisplaySettings(IBaseSettings):
         default=False)
     uigallery_effect = schema.Choice(
         title=_(u"label_uigallery_effect",
-                default=u"Opacity on mouse over"),
+                default=u"effect"),
         default="shake",
         vocabulary=SimpleVocabulary([
             SimpleTerm("blind", "blind",
@@ -42,7 +42,7 @@ class IuigalleryDisplaySettings(IBaseSettings):
                     default=u"bounce")),
             SimpleTerm("clip", "clip",
                 _(u"label_uigallery_effect2", 
-                    default=u"bounce")),
+                    default=u"clip")),
             SimpleTerm("drop", "drop",
                 _(u"label_uigallery_effect3", 
                     default=u"drop")),
@@ -72,13 +72,13 @@ class IuigalleryDisplaySettings(IBaseSettings):
                     default=u"shake")),
            SimpleTerm("size", "size",
                 _(u"label_uigallery_effect12",
-                    default=u"size")),
+                    default=u"size (not working yet)")),
            SimpleTerm("slide", "slide",
                 _(u"label_uigallery_effect13",
                     default=u"slide")),
             SimpleTerm("transfer", "transfer",
                 _(u"label_uigallery_effect14",
-                    default=u"transfer")
+                    default=u"transfer (not working yet)")
             )
         ]))
     uigallery_toppadding = schema.TextLine(
@@ -123,39 +123,23 @@ class uigalleryDisplayType(BatchingDisplayType):
         return u"""
 <script type="text/javascript">
 $(document).ready(function() {
-    // run the currently selected effect
-		function runEffect() {
-			// get effect type from 
-            var selectedEffect = "%(effect)s"
-			
-			// most effect types need no options passed by default
-			var options = {};
-			// some effects have required parameters
-			if ( selectedEffect === "scale" ) {
-				options = { percent: 0 };
-			} else if ( selectedEffect === "transfer" ) {
-				options = { to: "#content-core", className: "ui-effects-transfer" };
-			} else if ( selectedEffect === "size" ) {
-				options = { to: { width: 200, height: 60 } };
-			}
+    // $(".imagebox").mouseenter(function() {
+        var selectedEffect = "%(effect)s"
+        // some effects have required parameters
+	    if ( selectedEffect === "scale" ) {
+	    options = { percent: 10 };
+		} else if ( selectedEffect === "transfer" ) {
+			options = { to: "#content", className: "ui-effects-transfer" };
+		} else if ( selectedEffect === "size" ) {
+			options = { to: { width: 200, height: 60 } };
+		}
 
-			// run the effect
-			$(this).effect( selectedEffect, options, 500 );
-		};
-
-		// callback function to bring a hidden box back
-		function callback() {
-			setTimeout(function() {
-				$( ".imagebox" ).hide().fadeIn();
-			}, 1000 );
-		};
-
-		// set effect from select menu value
-		$(".imagebox").mouseenter(function() {
-			runEffect();
-			return false;
-		});
-
+        var options = {};
+        $(".imagebox").effect("%(effect)s", options, %(speed)i, function() {
+            //  to bring a hidden box back
+	        $(".imagebox").fadeIn();
+	    });
+    // });
 });
 </script>
 """ % {
