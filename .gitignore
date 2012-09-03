@@ -1,0 +1,7 @@
+
+collective.ptg.uigallery.egg-info/*
+collective/ptg/.DS_Store
+
+*.pyc
+
+.DS_Store
