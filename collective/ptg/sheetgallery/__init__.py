@@ -17,7 +17,7 @@ class IuigalleryDisplaySettings(IBaseSettings):
         min=1)
     uigallery_imagewidth = schema.Int(
         title=_(u"label_uigallery_imagewidth",
-            default=u"Width of (each) image (when mouse hovers)"),
+            default=u"Width of (each) image"),
         default=400,
         min=50)
     uigallery_imageheight = schema.Int(
@@ -123,7 +123,6 @@ class uigalleryDisplayType(BatchingDisplayType):
         return u"""
 <script type="text/javascript">
 $(document).ready(function() {
-    // $(".imagebox").mouseenter(function() {
         var selectedEffect = "%(effect)s"
         // some effects have required parameters
 	    if ( selectedEffect === "scale" ) {
@@ -141,7 +140,8 @@ $(document).ready(function() {
             //  to bring a hidden box back
 	        $(".imagebox").fadeIn();
 	    });
-    // });
+        $(this).find('.image-title').slideDown(%(speed)i);
+        $(this).find('.image-desc').slideDown(%(speed)i);
 });
 </script>
 """ % {
