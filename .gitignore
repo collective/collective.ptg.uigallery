@@ -5,3 +5,5 @@ collective/ptg/.DS_Store
 *.pyc
 
 .DS_Store
+
+dist/collective.ptg.uigallery-0.1.zip
