@@ -127,11 +127,13 @@ $(document).ready(function() {
         var selectedEffect = "%(effect)s"
         // some effects have required parameters
 	    if ( selectedEffect === "scale" ) {
-	    options = { percent: 10 };
+	    options = { percent: 10 };   
 		} else if ( selectedEffect === "transfer" ) {
 			options = { to: "#content", className: "ui-effects-transfer" };
+		} else if ( selectedEffect === "explode" ) {
+			options = { pieces: 6 };	
 		} else if ( selectedEffect === "size" ) {
-			options = { to: { width: 200, height: 60 } };
+			options = { to: { width: 50, height: 30 } };
 		}
 
         var options = {};
