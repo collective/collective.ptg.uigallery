@@ -4,7 +4,7 @@ Changelog
 0.1.2 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Added i18n support and enabled it [macagua]
 
 0.1.1 (2012-08-29)
 ------------------
