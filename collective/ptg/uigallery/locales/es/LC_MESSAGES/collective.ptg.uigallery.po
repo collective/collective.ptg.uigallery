@@ -26,14 +26,13 @@ msgstr "Nombre de Archivo css personalizado si usted elige eso arriba"
 
 #. Default: "Padding below image description"
 #: ./__init__.py:89
-#, fuzzy
 msgid "label_uigallery_bottompadding"
-msgstr "Relleno abajo del descripción de la imagen"
+msgstr "Relleno debajo de la descripción de la imagen"
 
 #. Default: "Number of images before a forced new row (use a high number if you don't want this)"
 #: ./__init__.py:13
 msgid "label_uigallery_columns"
-msgstr ""
+msgstr "Número de imágenes antes de una nueva fila forzada (use un número alto si no desea esto)"
 
 #. Default: "uigallery"
 #: ./__init__.py:119
@@ -43,12 +42,12 @@ msgstr "uigallery"
 #. Default: "effect"
 #: ./__init__.py:33
 msgid "label_uigallery_effect"
-msgstr ""
+msgstr "efecto"
 
 #. Default: "blind"
 #: ./__init__.py:38
 msgid "label_uigallery_effect0"
-msgstr ""
+msgstr "persiana"
 
 #. Default: "bounce"
 #: ./__init__.py:41
@@ -58,7 +57,7 @@ msgstr ""
 #. Default: "scale"
 #: ./__init__.py:68
 msgid "label_uigallery_effect10"
-msgstr ""
+msgstr "escalar"
 
 #. Default: "shake"
 #: ./__init__.py:71
@@ -68,17 +67,17 @@ msgstr ""
 #. Default: "size (not working yet)"
 #: ./__init__.py:74
 msgid "label_uigallery_effect12"
-msgstr ""
+msgstr "tamaño (aun no trabaja)"
 
 #. Default: "slide"
 #: ./__init__.py:77
 msgid "label_uigallery_effect13"
-msgstr ""
+msgstr "diapositiva"
 
 #. Default: "transfer (not working yet)"
 #: ./__init__.py:80
 msgid "label_uigallery_effect14"
-msgstr ""
+msgstr "transferir (aun no trabaja)"
 
 #. Default: "clip"
 #: ./__init__.py:44
@@ -88,12 +87,12 @@ msgstr ""
 #. Default: "drop"
 #: ./__init__.py:47
 msgid "label_uigallery_effect3"
-msgstr ""
+msgstr "soltar"
 
 #. Default: "explode"
 #: ./__init__.py:50
 msgid "label_uigallery_effect4"
-msgstr ""
+msgstr "explotar"
 
 #. Default: "fade"
 #: ./__init__.py:53
@@ -152,9 +151,8 @@ msgstr "Sin estilo / archivo css"
 
 #. Default: "Padding above image title"
 #: ./__init__.py:85
-#, fuzzy
 msgid "label_uigallery_toppadding"
-msgstr "Relleno arriba del título de la imagen"
+msgstr "Relleno sobre el título de la imagen"
 
 #. Default: "Use Thumbnail size instead of Size"
 #: ./__init__.py:29
