@@ -12,7 +12,7 @@ class IuigalleryDisplaySettings(IBaseSettings):
     uigallery_columns = schema.Int(
         title=_(u"label_uigallery_columns",
             default=u"Number of images before a forced new row (use a high "
-                    u"number if you dont want this)"),
+                    u"number if you don't want this)"),
         default=3,
         min=1)
     uigallery_imagewidth = schema.Int(
@@ -83,11 +83,11 @@ class IuigalleryDisplaySettings(IBaseSettings):
         ]))
     uigallery_toppadding = schema.TextLine(
         title=_(u"label_uigallery_toppadding",
-            default=u"Padding above imagetitle"),
+            default=u"Padding above image title"),
         default=u"90px")
     uigallery_bottompadding = schema.TextLine(
         title=_(u"label_uigallery_bottompadding",
-            default=u"Padding below imagedescription"),
+            default=u"Padding below image description"),
         default=u"70px")
 
     uigallery_style = schema.Choice(
