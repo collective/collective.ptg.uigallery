@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: collective.ptg.uigallery\n"
 "POT-Creation-Date: 2018-08-18 22:18+0000\n"
-"PO-Revision-Date: 2018-08-18 00:30-0400\n"
+"PO-Revision-Date: 2018-09-13 00:30-0400\n"
 "Last-Translator: Leonardo J. Caballero G. <leonardocaballero@gmail.com>\n"
 "Language-Team: Spanish Team\n"
 "MIME-Version: 1.0\n"
@@ -52,7 +52,7 @@ msgstr "persiana"
 #. Default: "bounce"
 #: ./__init__.py:41
 msgid "label_uigallery_effect1"
-msgstr ""
+msgstr "rebotar"
 
 #. Default: "scale"
 #: ./__init__.py:68
@@ -62,7 +62,7 @@ msgstr "escalar"
 #. Default: "shake"
 #: ./__init__.py:71
 msgid "label_uigallery_effect11"
-msgstr ""
+msgstr "sacudir"
 
 #. Default: "size (not working yet)"
 #: ./__init__.py:74
@@ -82,7 +82,7 @@ msgstr "transferir (aun no trabaja)"
 #. Default: "clip"
 #: ./__init__.py:44
 msgid "label_uigallery_effect2"
-msgstr ""
+msgstr "clip"
 
 #. Default: "drop"
 #: ./__init__.py:47
@@ -97,27 +97,27 @@ msgstr "explotar"
 #. Default: "fade"
 #: ./__init__.py:53
 msgid "label_uigallery_effect5"
-msgstr ""
+msgstr "descolorar"
 
 #. Default: "fold"
 #: ./__init__.py:56
 msgid "label_uigallery_effect6"
-msgstr ""
+msgstr "plegar"
 
 #. Default: "highlight"
 #: ./__init__.py:59
 msgid "label_uigallery_effect7"
-msgstr ""
+msgstr "realzar"
 
 #. Default: "puff"
 #: ./__init__.py:62
 msgid "label_uigallery_effect8"
-msgstr ""
+msgstr "soplo"
 
 #. Default: "pulsate"
 #: ./__init__.py:65
 msgid "label_uigallery_effect9"
-msgstr ""
+msgstr "palpitar"
 
 #. Default: "Height of (each) image"
 #: ./__init__.py:24
